@@ -1,300 +1,259 @@
 <!DOCTYPE html>
 <html>
-
-<!-- Title and Stylesheets-->
+<head>
 <title>Sean P. Kudrna</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://kit.fontawesome.com/1572784ea9.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    <!-- Text and Background Formatting--> body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-row-padding img {
-        margin-bottom: 12px
-    }
-
-    .bgimg {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: url('images/Bag.jpeg');
-        min-height: 100%;
-    }
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #222;}
+#main {margin-left: 120px}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
+</head>
+<body class="w3-black">
 
-
-<body>
-    <!-- Sidebar with image -->
-    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-        <div class="bgimg"></div>
-    </nav>
-
-    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <img src="images/SPKLogo.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
   </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PORTFOLIO</p>
+  </a>
+  <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>EXPERIENCE</p>
+  </a>
+  <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-graduation-cap w3-xxlarge"></i>
+    <p>EDUCATION</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-        <div class="w3-bar-block w3-center">
-            <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-            <a href="images/ResumeUpdated.pdf" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Resume</a>
-            <a href="https://www.linkedin.com/in/sean-kudrna-2b634312a/" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Connect</a>
-        </div>
+<!-- Navbar on small screens -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+    <a href="#experience" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
+    <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 
-    </nav>
-    <!-- End of Sidebar -->
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Sean P. Kudrna.</h1>
+    <p>Software Developer</p>
+    <img src="images/Sean.jpg" alt="Sean" class="w3-image" width="992" height="1108">
+  </header>
 
-    <!-- Page Content -->
-    <div class="w3-main w3-padding-large" style="margin-left:40%">
+<!-- About Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      As a forward-thinking and innovative Software Developer, I bring a blend of robust technical skills and a passion for pushing the boundaries of technology. With a strong foundation in computer science and hands-on experience in software engineering, I have honed my ability to develop and implement sophisticated solutions. My journey through various roles has been marked by a commitment to excellence, a knack for problem-solving, and an unwavering dedication to achieving project objectives. My experience spans across desktop and mobile application development, database management, and automated system testing, showcasing a versatile skill set. I am particularly adept in leveraging modern programming languages and development frameworks to bring creative ideas to life, ensuring optimal functionality and user experience. My proficiency extends to managing and parsing large datasets, where my analytical acumen comes to the forefront. With each project, I aim to contribute significantly, driving innovation and efficiency.
+    </p>
+  
+    <h3 class="w3-padding-16 w3-text-light-grey">Skills and Certifications</h3>
+    <div class="w3-row">
+      <div class="w3-half">
+        <p><b>Languages:</b> C++, C, C#, Java, Python, JavaScript</p>
+        <p><b>Web Development:</b> PHP, HTML, CSS, Node.JS</p>
+        <p><b>App Development:</b> React Native, Typescript, Electron</p>
+      </div>
+      <div class="w3-half">
+        <p><b>Database:</b> SQL, SQLite, InfluxDB, Flux</p>
+        <p><b>Certifications:</b> AWS Cloud Technical Essentials, Architecting Solutions on AWS</p>
+        <p><b>Other:</b> Agile Methodologies, Jira Cloud, AWS, Android Studio, Bitbucket, Git</p>
+      </div>
 
-        <!-- Menu icon to open sidebar -->
-        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+      <!-- Button to download resume -->
+    <p>
+        <a href="/images/Resume.pdf" download>
+            <button class="w3-button w3-padding-large" style="background-color: #272626; color: #fff;">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+        </a>
+    </p>
+    </div>
+  </div>
+  
+<!-- Portfolio Section -->
+<div class="w3-padding-64 w3-content" id="portfolio">
+    <h2 class="w3-text-light-grey">Portfolio</h2>
+    <hr style="width:200px" class="w3-opacity">
+  
+    <!-- GitHub Repositories Link -->
+    <div class="w3-container w3-center">
+      <a href="https://github.com/SeanKudrna?tab=repositories" target="_blank">
+        <img src="images/GH.png" alt="GitHub Repositories" style="width:100%; border-radius: 10px;">
+      </a>
+      <p>Check out my GitHub repositories!</p>
+    </div>
+  </div>
+  
 
-        <!-- Header -->
-        <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+     <!-- Experience Section -->
+  <div class="w3-padding-64 w3-content" id="experience">
+    <h2 class="w3-text-light-grey">Related Work Experience</h2>
+    <hr style="width:200px" class="w3-opacity">
 
-            <!-- Title -->
-            <h1 class="w3-jumbo"><b>Sean Kudrna</b></h1>
-            <p>Software Developer - Computer Science major</p>
-
-            <!-- Front Page Image -->
-            <img src="images/Bag.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-            <img src="images/Bag.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-
-            <!-- Download Resume Button-->
-            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-    <a href="images/ResumeUpdated.pdf" style="text-decoration: none"> <i class="fa fa-download"></i>Download Resume </a>
-  </button>
-
-        </header>
-        <!-- End of Header-->
-
-        <!-- Portfolio Section -->
-        <div class="w3-padding-32 w3-content" id="portfolio">
-            <h2 class="w3-text-grey">Me</h2>
-
-            <!-- Grid for photos -->
-            <div class="w3-row-padding" style="margin:0 -16px">
-
-                <!-- Left Side Grid Photos-->
-                <div class="w3-half">
-                    <img src="images/Developing.jpeg" style="width:100%">
-                    <img src="images/Profile.jpeg" style="width:100%">
-                    <!-------------------->
-                </div>
-
-                <!-- Right Side Grid Photo-->
-                <div class="w3-half" style = "margin-top:17%">
-                    <img src="images/city.JPG" style="width:100%">
-                </div>
-
-            </div>
-            <!-- End of Grid-->
-
-        </div>
-        <!-- End of Portfolio -->
-
-        <!-- About Section -->
-        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-            <h2>About</h2>
-            <hr class="w3-opacity">
-            <p>My ultimate goal is to obtain a position as a software engineer for a leading company. I wish to work on new and innovative projects and join the movement to stretch the unending bounds of technology. I aspire to be a part of a bigger picture
-                where I can contribute my skills and experience towards the company’s goals as well as my own. I have the drive to continue to learn and build my skill set in order to put more into my work and progress in my career.
-            </p>
-            <h3 class="w3-padding-16">Language Confidence</h3>
-            <hr class="w3-opacity">
-
-            <p class="w3-wide">C++ / C</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%">90%</div>
-            </div><br>
-            <p class="w3-wide">Java</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%">90%</div>
-            </div><br>
-            <p class="w3-wide">Python</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
-            </div><br>
-            <p class="w3-wide">PHP / SQL</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:65%">65%</div>
-            </div><br>
-            <p class="w3-wide">F#</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:60%">60%</div>
-            </div><br>
-            
-            <p class="w3-wide">C#</p>
-            <div class="w3-light-grey">
-                <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
-            </div><br>
-
-
-
-            <br>
-            <h3 class="w3-padding-16">Years of Experience</h3>
-            <hr class="w3-opacity">
-            <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">6</span><br> Java
-                </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">5</span><br> C++
-                </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">6</span><br> Python
-                </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">4</span><br> HTML / CSS / JS
-                </div>
-            </div>
-
-            <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <a href="images/ResumeUpdated.pdf" style="text-decoration: none"> <i class="fa fa-download"></i>Download Resume </a>
-    </button>
-
-            <!-- Testimonials -->
-            <h3 class="w3-padding-24">Related Work Experience</h3>
-            <hr class="w3-opacity">
-
-            <a href="https://www.controls.com"><img src="images/controls.PNG" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:100px"></a>
-            <p><span class="w3-large w3-text-black w3-margin-right">Software Engineering Intern</span></p>
-            <p><b><u>Dec 2020 - Mar 2021</u></b><br><br><br>-Utilized Agile Scrum practices for efficient team workflow <br><br>-Developed automated testing protocols for the Phoenix motor controller
-            <br><br> -Managed the testing and monitoring of current, resistance and other electrical variables through the motor controller system
-            <br><br> -Worked with C++, QT, Raspberry Pi and embedded systems
-            <br><br> -Built a GUI hub to interface with power supply, battery charger, digital multimeter, DAC and a series of relays for product testing
-            </p><br>
-
-            <a href="https://apple.com"><img src="images/Apple.PNG" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:100px"></a>
-            <p><span class="w3-large w3-text-black w3-margin-right">Technical Expert</span></p>
-            <p><b><u>Oct 2021 - Present</u></b><br><br><br>-Progressed quickly through the Genius Bar in a fast paced environment from entry level specialist, to technical specialist, and then
-                finally technical expert within the course of 10 months. Was the top technician at Apple Lincoln Park, one of the busiest Genius Bar
-                locations in the country within my first quarter
-                <br><br> -Troubleshoot, diagnose, and perform repairs on iOS devices, Apple TV, Apple Watch, Beats and their accompanying software<br><br> -Mentors technical specialists on technical and customer service issues
-                <br><br> -Documents all pertinent user information and problems with accuracy in all store supported systems
-                <br><br> -Combines strong technical and communication skills to best analyze and solve problems and rebuild user relationships with Apple
-            </p><br>
-
-            <a href="https://satech.uic.edu"><img src="images/uic.PNG" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:100px"></a>
-            <p><span class="w3-large w3-text-black w3-margin-right">Web Developer</span></p>
-            <p><b><u>Sep 2020 - Dec 2020</u></b><br><br><br>-Assessed and managed issue tickets through Jira Cloud<br><br>-Developed, tested, and deployed new web-based applications and databases
-            <br><br>-Implemented changes to existing web-based applications and databases
-            <br><br>-Worked primarily with C# and Node.JS for back-end development and work with web APIs
-            </p><br>
-
-            <a href="https://www.stuudeo.com"><img src="images/Stuudeo.PNG" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:100px"></a>
-            <p><span class="w3-large w3-text-black w3-margin-right">Chief Technical Programmer</span></p>
-            <p><b><u>Mar 2020 - Aug 2020</u></b><br><br><br>-Took the lead in implementing agile practices to increase project productivity and delivery management<br><br> -Lead developer for backend website functionality and accompanying databases<br><br> -Worked in parallel with lead UI developer to ensure a smooth user experience 
-            <br><br> -Integrated APIs to assist with image compression and data storage
-            <br><br> -Worked heavily with PHP, SQL, HTML and minor JavaScript to develop algorithms for editing and accessing database information and
-            integration with the web application 
-            <br><br> -Available to view on GitHub and www.stuudeo.com
-            </p><br>
-
-    
-            <!-- Grid for pricing tables -->
-            <h3 class="w3-padding-16">Relevent Studies (UIC)</h3>
-            <div class="w3-row-padding" style="margin:0 -16px">
-
-                <div class="w3-quarter">
-                    <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-                        <li class="w3-black w3-xlarge w3-padding-32">Year 1</li>
-                        <li class="w3-padding-16"><a href ="https://catalog.uic.edu/search/?P=CS%20141">Program Design</a></li>
-                    </ul>
-                </div>
-                <div class="w3-quarter">
-                    <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-                        <li class="w3-black w3-xlarge w3-padding-32">Year 2</li>
-                        <li class="w3-padding-16"><a href ="https://catalog.uic.edu/search/?P=CS%20251">Data Structures and Algorithms</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20211">Programming Practicum</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=ART%20151">Creative Coding in Media Arts</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20301">Languages and Automota</a></li>
-                    </ul>
-                </div>
-                <div class="w3-quarter">
-                    <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-                        <li class="w3-black w3-xlarge w3-padding-32">Year 3</li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20261">Machine Organization</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20342">Software Design</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20341">Programming Languages Design and Implementation</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20362">Computer Design</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20361">Systems Programming</a></li>
-                    </ul>
-                </div>
-                <div class="w3-quarter">
-                    <ul class="w3-ul w3-center w3-card w3-hover-shadow">
-                        <li class="w3-black w3-xlarge w3-padding-32">Year 4</li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20411">Artifical Intelligence</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20483">Big Data Mining</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20422">User Interface Design and Programming</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20401">Computer Algorithims</a></li>
-                        <li class="w3-padding-16"><a href = "https://catalog.uic.edu/search/?P=CS%20377">Ethics in Computing</a></li>
-                    </ul>
-                </div>
-                <!-- End Grid/Pricing tables -->
-            </div>
-
-            <!-- End About Section -->
-        </div>
-
-        <!-- Contact Section -->
-        <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-            <h2>Contact Me</h2>
-            <hr class="w3-opacity">
-
-            <div class="w3-section">
-                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, IL</p>
-                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (847)-393-5428</p>
-                <a href="mailto:me@seankudrna.com" style = "text-decoration: none"><p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: me@seankudrna.com</p></a>
-            </div>
-
-            <!-- Image of location/map -->
-
-            </form>
-            <!-- End Contact Section -->
-        </div>
-
-        <!-- Footer -->
-        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-            <!-- End footer -->
-            <div class=links>
-                <!-- LinkedIn -->
-                <li><a href="https://www.linkedin.com/in/sean-kudrna-2b634312a/"><i class="fab fa-linkedin"></i></a></li>
-
-                <!---- Instagram -->
-                <li><a href="https://github.com/SeanKudrna"><i class="fab fa-github"></i></a></li>
-            </div>
-
-        </footer>
-
-        <!-- END PAGE CONTENT -->
+    <!-- Software Engineer Intern at Inventus Power -->
+    <div class="w3-container">
+      <!-- Image placeholder for Inventus Power -->
+      <a href="https://inventuspower.com/" target="_blank">
+        <img src="images/IP.jpeg" alt="Inventus Power" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      </a>
+      <h5 class="w3-opacity"><b>Software Engineer Intern / Inventus Power</b></h5>
+      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - Present - Bolingbrook, Illinois, United States</h6>
+      <p>• Developing a cross-platform desktop application designed for real-time reception and decoding of CAN messages. This tool seamlessly uploads signals to the cloud and enables dynamic graphing of the data in real-time.<br>
+         • Took the lead in the development of a cross-platform mobile application for Inventus Power's Light Electric Vehicle (LEV) team. This tool Provides accessible, real-time battery analytics and visualization, enhancing the management of battery fleets<br>
+         • Utilized a large-scale Influx database for the extraction, parsing, and formatting of essential battery analytics, serving as the critical backbone of the application's data visualization capabilities</p>
+         <p class = 'w3-opacity'><b>Skills:</b> Electron · React Native · TypeScript · InfluxDB · Flux · Mobile Application Development · Android SDK · Bitbucket · Node.js · JavaScript</p>
+      <hr>
     </div>
 
-    <script>
-        // Open and close sidebar
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "60%";
-            document.getElementById("mySidebar").style.display = "block";
-        }
+     <!-- Apple Experience -->
+     <div class="w3-container">
+        <a href="https://www.apple.com/" target="_blank">
+            <img src="images/Apple.PNG" alt="Apple" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        </a>
+        <h5 class="w3-opacity"><b>Apple</b></h5>
+        <div class="w3-container" style="padding-left: 100px;">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - May 2023 - Chicago, Illinois, United States</h6>
+            <!-- Technical Expert at Apple -->
+            <h5 class="w3-opacity"><b>Technical Expert / Apple</b></h5>
+            <p>• Progressed quickly through the Genius Bar from an entry level Specialist to a Technical Specialist, and then finally to a Technical Expert within the course of 10 months.<br>
+                • Was the top technician at Apple Lincoln Park, one of the busiest Genius Bar locations in the country, within my first quarter.<br>
+                • Troubleshot, diagnosed, and performed repairs on iOS devices, Apple TV, Apple Watch, Beats and their accompanying software.<br>
+                • Mentored Technical Specialists on technical and customer service issues.<br>
+                • Documented all pertinent user information and problems with accuracy in all store supported systems.</p>
+                <p class = 'w3-opacity'><b>Skills:</b> iPhone Repair · Mentoring · iOS · Technical Support · Customer Service</p>
 
-        function closeNav() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-    </script>
+            <!-- Technical Specialist at Apple -->
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - May 2022 - Chicago, Illinois, United States</h6>
+          <h5 class="w3-opacity"><b>Technical Specialist / Apple</b></h5>
+            <p>• Ran diagnostics to uncover both hardware and software failures in iOS devices and troubleshot accordingly to solve the issue.<br>
+                • Processed incoming and outgoing repairs to resolve customer device issues.<br>
+                • Developed strong, positive relationships with Apple. When a customer needed assistance, quickly assessed their situation. Sometimes took care of customers with advice or a solution on the spot, using knowledge of current Apple technology to help with iPod, iPhone, and iPad devices.<br>
+                • Provided personal training for new customers, helped them acquire the basic skills they needed to get started on photo, video, and music projects.</p>
+                <p class = 'w3-opacity'><b>Skills:</b> Troubleshooting · Technical Support · Customer Service</p>
+                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Oct 2021 - Naperville, Illinois</h6>
+            <!-- Specialist at Apple -->
+            <h5 class="w3-opacity"><b>Specialist / Apple</b></h5>
+            <p>• First person the customers met when they entered the store, and also the person who guided them advising, selling, and even setting up their new products.<br>
+                • Was highly skilled at uncovering customers’ needs, then following through with enlightening solutions.<br>
+                • Performed other roles within the store. Maintaining visual merchandising and assisting team members.<br>
+                • Stayed on top of news about products and initiatives, applied my learning in customer interactions.<br>
+                • Troubleshot minor IOS and software issues and provided innovative solutions / next steps for solving the problem at hand.</p>
+                <p class = 'w3-opacity'><b>Skills:</b> Troubleshooting · Customer Service</p>
+        </div>
+        <hr>
+      </div>
 
-</body>
+    <!-- Software Engineer Intern at Control Solutions LLC -->
+    <div class="w3-container">
+      <a href="https://www.controls.com/" target="_blank">
+        <img src="images/controls.PNG" alt="Control Solutions LLC" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      </a>
+        <h5 class="w3-opacity"><b>Software Engineer Intern / Control Solutions LLC</b></h5>
+      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2020 - Jan 2021 - Aurora, Illinois, United States</h6>
+      <p>• Developed automated testing protocols for the Phoenix motor controller.<br>
+         • Managed the testing and monitoring of current, resistance and other electrical variables through the motor controller system.<br>
+         • Worked with C++, Qt, Raspberry Pi and embedded systems.<br>
+         • Built a GUI hub to interface with power supply, battery charger, digital multimeter, DAC and a series of relays for product testing.</p>
+         <p class = 'w3-opacity'><b>Skills:</b> Qt · Raspberry Pi · Embedded Systems · C++</p>
+      <hr>
+    </div>
 
-</html>
+    <!-- Web Developer at University of Illinois Chicago -->
+    <div class="w3-container">
+      <a href="https://satech.uic.edu/" target="_blank">
+        <img src="images/uic.PNG" alt="University of Illinois at Chicago" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      </a>
+        <h5 class="w3-opacity"><b>Web Developer / University of Illinois at Chicago</b></h5>
+      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2020 - Dec 2020 - Chicago, Illinois, United States</h6>
+      <p>• Assessed and managed issue tickets through Jira Cloud.<br>
+         • Developed, tested, and deployed new web-based applications and databases.<br>
+         • Implemented changes to existing web-based applications and databases.<br>
+         • Worked primarily with C# and Node.JS for back-end development and worked with web APIs.</p>
+         <p class = 'w3-opacity'><b>Skills:</b> C# · Node.js · Jira · Postman API</p>
+         <hr>
+        
+    </div>
+
+    <!-- Lead Backend Developer at Stuudeo -->
+    <div class="w3-container">
+      <a href="https://stuudeo.com/" target="_blank">
+        <img src="images/Stuudeo.PNG" alt="Stuudeo" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      </a>
+      <h5 class="w3-opacity"><b>Lead Backend Developer / Stuudeo</b></h5>
+      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2020 - Aug 2020 - Naperville, Illinois, United States</h6>
+      <p>• Lead developer for backend website functionality and accompanying databases.<br>
+         • Integrated APIs to assist with image compression and data storage.<br>
+         • Worked heavily with PHP, SQL, and JavaScript to develop algorithms for the editing and accessing of database information.<br>
+         • Managed the implementation of agile practices to increase project productivity and delivery management.</p>
+         <p class = 'w3-opacity'><b>Skills:</b> PHP · SQL · JavaScript · HTML</p>
+    </div>
+  </div>
+
+
+  <!-- Education Section -->
+  <div class="w3-padding-64 w3-content" id="education">
+    <h2 class="w3-text-light-grey">Education</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <!-- Add your education here -->
+    <!-- Example -->
+    <div class="w3-container">
+      <h5 class="w3-opacity"><b>University of Illinois at Chicago</b></h5>
+      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2023</h6>
+      <p>Bachelor of Science, Computer Science — College of Engineering</p>
+      <hr>
+    </div>
+    <!-- Repeat for other educational qualifications -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, IL</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (847)-393-5428</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: me@seankudrna.com</p>
+    </div>
+    </div>
+  
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a href="https://www.linkedin.com/in/seankudrna/" class="w3-hover-opacity"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/SeanKudrna" class="w3-hover-opacity"><i class="fa fa-github"></i></a>
+    </footer>
+  
+  <!-- END PAGE CONTENT -->
+  </div>
+  
+  </body>
+  </html>
+  
