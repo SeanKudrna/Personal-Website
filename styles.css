@@ -104,6 +104,7 @@ p {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding-top: 5px;
 }
 
 .logo {
@@ -179,6 +180,7 @@ p {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  align-items: center;
 }
 
 .hero-title {
@@ -204,6 +206,12 @@ p {
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Fix hero button container */
+.hero-content .d-flex {
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /* Section Styles */
@@ -412,7 +420,6 @@ p {
   position: absolute;
   width: 20px;
   height: 20px;
-  right: -10px;
   background-color: var(--bg-secondary);
   border: 3px solid var(--accent);
   top: 15px;
@@ -420,8 +427,12 @@ p {
   z-index: 1;
 }
 
+.timeline-item-left::after {
+  right: -13px;
+}
+
 .timeline-item-right::after {
-  left: -10px;
+  left: -13px;
 }
 
 .timeline-content {
@@ -831,6 +842,7 @@ p {
   .timeline-item::after {
     left: 18px;
     right: auto;
+    margin-left: 0;
   }
 }
 
