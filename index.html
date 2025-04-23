@@ -1,271 +1,565 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Sean P. Kudrna</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.w3-sidebar {width: 120px;background: #222;}
-#main {margin-left: 120px}
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
+  <title>Sean P. Kudrna | Software Engineer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sean P. Kudrna - Software Engineer with expertise in React Native, Electron, and more">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <img src="images/SPKLogo.png" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PORTFOLIO</p>
-  </a>
-  <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-briefcase w3-xxlarge"></i>
-    <p>EXPERIENCE</p>
-  </a>
-  <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-graduation-cap w3-xxlarge"></i>
-    <p>EDUCATION</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<!-- Navbar on small screens -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
-    <a href="#experience" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
-    <a href="#education" class="w3-bar-item w3-button" style="width:25% !important">EDUCATION</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Sean P. Kudrna.</h1>
-    <p>Software Developer</p>
-    <img src="images/Sean.jpg" alt="Sean" class="w3-image" width="992" height="1108">
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="navbar">
+        <a href="#" class="logo">
+          <img src="images/SPKLogo.png" alt="Sean Kudrna Logo">
+          <span>Sean Kudrna</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
   </header>
 
-<!-- About Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-      As a forward-thinking and innovative Software Developer, I bring a blend of robust technical skills and a passion for pushing the boundaries of technology. With a strong foundation in computer science and hands-on experience in software engineering, I have honed my ability to develop and implement sophisticated solutions. My journey through various roles has been marked by a commitment to excellence, a knack for problem-solving, and an unwavering dedication to achieving project objectives. My experience spans across desktop and mobile application development, database management, and automated system testing, showcasing a versatile skill set. I am particularly adept in leveraging modern programming languages and development frameworks to bring creative ideas to life, ensuring optimal functionality and user experience. My proficiency extends to managing and parsing large datasets, where my analytical acumen comes to the forefront. With each project, I aim to contribute significantly, driving innovation and efficiency.
-    </p>
-  
-    <h3 class="w3-padding-16 w3-text-light-grey">Skills and Certifications</h3>
-    <div class="w3-row">
-      <div class="w3-half">
-        <p><b>Languages:</b> C++, C, C#, Java, Python, JavaScript</p>
-        <p><b>Web Development:</b> PHP, HTML, CSS, Node.JS, React</p>
-        <p><b>App Development:</b> React Native, Typescript, Electron, Ionic, Cordova</p>
-      </div>
-      <div class="w3-half">
-        <p><b>Database:</b> SQL, SQLite, InfluxDB, Flux</p>
-        <p><b>Certifications:</b> AWS Cloud Technical Essentials, Architecting Solutions on AWS</p>
-        <p><b>Other:</b> Agile Methodologies, Jira Cloud, AWS, Android Studio, Bitbucket, Git</p>
-      </div>
-
-      <!-- Button to download resume -->
-    <p>
-        <a href="/images/Resume.pdf" download>
-            <button class="w3-button w3-padding-large" style="background-color: #272626; color: #fff;">
-                <i class="fa fa-download"></i> Download Resume
-            </button>
-        </a>
-    </p>
-    </div>
-  </div>
-  
-<!-- Portfolio Section -->
-<div class="w3-padding-64 w3-content" id="portfolio">
-    <h2 class="w3-text-light-grey">Portfolio</h2>
-    <hr style="width:200px" class="w3-opacity">
-  
-    <!-- GitHub Repositories Link -->
-    <div class="w3-container w3-center">
-      <a href="https://github.com/SeanKudrna?tab=repositories" target="_blank">
-        <img src="images/GH.png" alt="GitHub Repositories" style="width:100%; border-radius: 10px;">
-      </a>
-      <p>Check out my GitHub repositories!</p>
-    </div>
-  </div>
-  
-
-     <!-- Experience Section -->
-  <div class="w3-padding-64 w3-content" id="experience">
-    <h2 class="w3-text-light-grey">Related Work Experience</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Software Engineer Intern at Control Solutions LLC -->
-    <div class="w3-container">
-      <a href="https://www.controls.com/" target="_blank">
-        <img src="images/controls.PNG" alt="Control Solutions LLC" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      </a>
-        <h5 class="w3-opacity"><b>Software Engineer / Control Solutions LLC</b></h5>
-      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - Present - Aurora, Illinois, United States</h6>
-       <p>• Developing and supporting cross-platform PC and Mobile diagnostic applications for a wide array of motion control systems developed by CSLLC.<br>
-         • Balancing and managing concurrent projects across a variety of different technologies: React Native, Ionic / Cordova, native Android development, and more.<br>
-         <p class = 'w3-opacity'><b>Skills:</b> Electron · React Native · Node.js · Mobile Application Development</p>
-      <hr>
-    </div>
-
-    <!-- Software Engineer Intern at Inventus Power -->
-    <div class="w3-container">
-      <a href="https://inventuspower.com/" target="_blank">
-        <img src="images/IP.jpeg" alt="Inventus Power" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      </a>
-      <h5 class="w3-opacity"><b>Software Engineer Intern / Inventus Power</b></h5>
-      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - Dec 2023 - Bolingbrook, Illinois, United States</h6>
-      <p>• Spent time developing a cross-platform desktop application designed for real-time reception and decoding of CAN messages. This tool was designed to upload signals to the cloud and enable dynamic graphing of real-time data.<br>
-         • Took the lead in the development of a cross-platform mobile application for Inventus Power's Light Electric Vehicle (LEV) team. This tool Provides accessible, real-time battery analytics and visualization, enhancing the management of battery fleets<br>
-         • Utilized a large-scale Influx database for the extraction, parsing, and formatting of essential battery analytics, serving as the critical backbone of the application's data visualization capabilities</p>
-         <p class = 'w3-opacity'><b>Skills:</b> Electron · React Native · TypeScript · InfluxDB · Flux · Mobile Application Development · Android SDK · Bitbucket · Node.js · JavaScript</p>
-      <hr>
-    </div>
-
-     <!-- Apple Experience -->
-     <div class="w3-container">
-        <a href="https://www.apple.com/" target="_blank">
-            <img src="images/Apple.PNG" alt="Apple" class="w3-left w3-circle w3-margin-right" style="width:80px">
-        </a>
-        <h5 class="w3-opacity"><b>Apple</b></h5>
-        <div class="w3-container" style="padding-left: 100px;">
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - May 2023 - Chicago, Illinois, United States</h6>
-            <!-- Technical Expert at Apple -->
-            <h5 class="w3-opacity"><b>Technical Expert / Apple</b></h5>
-            <p>• Progressed quickly through the Genius Bar from an entry level Specialist to a Technical Specialist, and then finally to a Technical Expert within the course of 10 months.<br>
-                • Was the top technician at Apple Lincoln Park, one of the busiest Genius Bar locations in the country, within my first quarter.<br>
-                • Troubleshot, diagnosed, and performed repairs on iOS devices, Apple TV, Apple Watch, Beats and their accompanying software.<br>
-                • Mentored Technical Specialists on technical and customer service issues.<br>
-                • Documented all pertinent user information and problems with accuracy in all store supported systems.</p>
-                <p class = 'w3-opacity'><b>Skills:</b> iPhone Repair · Mentoring · iOS · Technical Support · Customer Service</p>
-
-            <!-- Technical Specialist at Apple -->
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - May 2022 - Chicago, Illinois, United States</h6>
-          <h5 class="w3-opacity"><b>Technical Specialist / Apple</b></h5>
-            <p>• Ran diagnostics to uncover both hardware and software failures in iOS devices and troubleshot accordingly to solve the issue.<br>
-                • Processed incoming and outgoing repairs to resolve customer device issues.<br>
-                • Developed strong, positive relationships with Apple. When a customer needed assistance, quickly assessed their situation. Sometimes took care of customers with advice or a solution on the spot, using knowledge of current Apple technology to help with iPod, iPhone, and iPad devices.<br>
-                • Provided personal training for new customers, helped them acquire the basic skills they needed to get started on photo, video, and music projects.</p>
-                <p class = 'w3-opacity'><b>Skills:</b> Troubleshooting · Technical Support · Customer Service</p>
-                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Oct 2021 - Naperville, Illinois</h6>
-            <!-- Specialist at Apple -->
-            <h5 class="w3-opacity"><b>Specialist / Apple</b></h5>
-            <p>• First person the customers met when they entered the store, and also the person who guided them advising, selling, and even setting up their new products.<br>
-                • Was highly skilled at uncovering customers’ needs, then following through with enlightening solutions.<br>
-                • Performed other roles within the store. Maintaining visual merchandising and assisting team members.<br>
-                • Stayed on top of news about products and initiatives, applied my learning in customer interactions.<br>
-                • Troubleshot minor IOS and software issues and provided innovative solutions / next steps for solving the problem at hand.</p>
-                <p class = 'w3-opacity'><b>Skills:</b> Troubleshooting · Customer Service</p>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container d-flex align-center">
+      <div class="hero-content">
+        <h1 class="hero-title fade-in delay-1">
+          Hi, I'm Sean P. Kudrna
+        </h1>
+        <h2 class="hero-subtitle fade-in delay-2">
+          Software Engineer
+        </h2>
+        <p class="hero-description fade-in delay-3">
+          As a forward-thinking and innovative Software Developer, I bring a blend of robust technical skills and a passion for pushing the boundaries of technology.
+        </p>
+        <div class="d-flex gap-2 fade-in delay-4">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+          <a href="/images/Resume.pdf" download class="btn btn-outline">
+            <i class="fas fa-download"></i> Resume
+          </a>
         </div>
-        <hr>
       </div>
-
-    <!-- Software Engineer Intern at Control Solutions LLC -->
-    <div class="w3-container">
-      <a href="https://www.controls.com/" target="_blank">
-        <img src="images/controls.PNG" alt="Control Solutions LLC" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      </a>
-        <h5 class="w3-opacity"><b>Software Engineer Intern / Control Solutions LLC</b></h5>
-      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2020 - Jan 2021 - Aurora, Illinois, United States</h6>
-      <p>• Developed automated testing protocols for the Phoenix motor controller.<br>
-         • Managed the testing and monitoring of current, resistance and other electrical variables through the motor controller system.<br>
-         • Worked with C++, Qt, Raspberry Pi and embedded systems.<br>
-         • Built a GUI hub to interface with power supply, battery charger, digital multimeter, DAC and a series of relays for product testing.</p>
-         <p class = 'w3-opacity'><b>Skills:</b> Qt · Raspberry Pi · Embedded Systems · C++</p>
-      <hr>
     </div>
+  </section>
 
-    <!-- Web Developer at University of Illinois Chicago -->
-    <div class="w3-container">
-      <a href="https://satech.uic.edu/" target="_blank">
-        <img src="images/uic.PNG" alt="University of Illinois at Chicago" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      </a>
-        <h5 class="w3-opacity"><b>Web Developer / University of Illinois at Chicago</b></h5>
-      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2020 - Dec 2020 - Chicago, Illinois, United States</h6>
-      <p>• Assessed and managed issue tickets through Jira Cloud.<br>
-         • Developed, tested, and deployed new web-based applications and databases.<br>
-         • Implemented changes to existing web-based applications and databases.<br>
-         • Worked primarily with C# and Node.JS for back-end development and worked with web APIs.</p>
-         <p class = 'w3-opacity'><b>Skills:</b> C# · Node.js · Jira · Postman API</p>
-         <hr>
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <h2>About Me</h2>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <p>
+          As a forward-thinking and innovative Software Developer, I bring a blend of robust technical skills and a passion for pushing the boundaries of technology. With a strong foundation in computer science and hands-on experience in software engineering, I have honed my ability to develop and implement sophisticated solutions. My journey through various roles has been marked by a commitment to excellence, a knack for problem-solving, and an unwavering dedication to achieving project objectives.
+        </p>
+        <p>
+          My experience spans across desktop and mobile application development, database management, and automated system testing, showcasing a versatile skill set. I am particularly adept in leveraging modern programming languages and development frameworks to bring creative ideas to life, ensuring optimal functionality and user experience. My proficiency extends to managing and parsing large datasets, where my analytical acumen comes to the forefront. With each project, I aim to contribute significantly, driving innovation and efficiency.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <h2>Skills & Certifications</h2>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-content">
+            <h3><i class="fas fa-code"></i> Languages</h3>
+            <div class="skills-list">
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
         
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-content">
+            <h3><i class="fas fa-globe"></i> Web Development</h3>
+            <div class="skills-list">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">Node.JS</span>
+              <span class="skill-tag">React</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-content">
+            <h3><i class="fas fa-mobile-alt"></i> App Development</h3>
+            <div class="skills-list">
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">Electron</span>
+              <span class="skill-tag">Ionic</span>
+              <span class="skill-tag">Cordova</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-content">
+            <h3><i class="fas fa-database"></i> Database</h3>
+            <div class="skills-list">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">SQLite</span>
+              <span class="skill-tag">InfluxDB</span>
+              <span class="skill-tag">Flux</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
+          <div class="card-content">
+            <h3><i class="fas fa-certificate"></i> Certifications</h3>
+            <div class="skills-list">
+              <span class="skill-tag">AWS Cloud Technical Essentials</span>
+              <span class="skill-tag">Architecting Solutions on AWS</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
+          <div class="card-content">
+            <h3><i class="fas fa-tools"></i> Other</h3>
+            <div class="skills-list">
+              <span class="skill-tag">Agile Methodologies</span>
+              <span class="skill-tag">Jira Cloud</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Android Studio</span>
+              <span class="skill-tag">Bitbucket</span>
+              <span class="skill-tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Lead Backend Developer at Stuudeo -->
-    <div class="w3-container">
-      <a href="https://stuudeo.com/" target="_blank">
-        <img src="images/Stuudeo.PNG" alt="Stuudeo" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      </a>
-      <h5 class="w3-opacity"><b>Lead Backend Developer / Stuudeo</b></h5>
-      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2020 - Aug 2020 - Naperville, Illinois, United States</h6>
-      <p>• Lead developer for backend website functionality and accompanying databases.<br>
-         • Integrated APIs to assist with image compression and data storage.<br>
-         • Worked heavily with PHP, SQL, and JavaScript to develop algorithms for the editing and accessing of database information.<br>
-         • Managed the implementation of agile practices to increase project productivity and delivery management.</p>
-         <p class = 'w3-opacity'><b>Skills:</b> PHP · SQL · JavaScript · HTML</p>
+  <!-- Portfolio Section -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <h2>Portfolio</h2>
+      </div>
+      
+      <div class="mb-4" data-aos="fade-up">
+        <p>Check out my GitHub repositories to see examples of my work and projects.</p>
+      </div>
+      
+      <div class="portfolio-showcase" data-aos="fade-up">
+        <div class="portfolio-card featured-card">
+          <div class="portfolio-card-header">
+            <div class="portfolio-folder">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="portfolio-links">
+              <a href="https://github.com/SeanKudrna?tab=repositories" target="_blank" aria-label="GitHub Repositories"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="portfolio-title">GitHub Repositories</h3>
+          <p class="portfolio-description">
+            Browse my collection of projects, contributions, and code samples. My repositories showcase my technical skills and approach to software development across various technologies.
+          </p>
+          
+          <div class="portfolio-image">
+            <img src="images/GH.png" alt="GitHub Repositories Screenshot" class="rounded-image">
+          </div>
+          
+          <div class="d-flex justify-center mt-3">
+            <a href="https://github.com/SeanKudrna?tab=repositories" target="_blank" class="btn btn-primary">
+              <i class="fab fa-github"></i> View GitHub Projects
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4" data-aos="fade-up">
+        <p>Interested in collaborating or want to see more of my work? <a href="#contact" class="hover-underline">Contact me</a> for additional information.</p>
+      </div>
     </div>
-  </div>
+  </section>
 
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <h2>Work Experience</h2>
+      </div>
+      
+      <div class="timeline">
+        <!-- Software Engineer at Control Solutions LLC -->
+        <div class="timeline-item timeline-item-left" data-aos="fade-right">
+          <div class="timeline-content">
+            <div class="d-flex align-center gap-2 mb-2">
+              <a href="https://www.controls.com/" target="_blank">
+                <img src="images/controls.PNG" alt="Control Solutions LLC" class="card-logo">
+              </a>
+              <div>
+                <h3 class="card-title">
+                  <a href="https://www.controls.com/" target="_blank">Software Engineer</a>
+                </h3>
+                <p class="card-subtitle"><i class="fas fa-building"></i> Control Solutions LLC</p>
+              </div>
+            </div>
+            <p class="mb-1"><i class="fas fa-calendar"></i> Jan 2024 - Present</p>
+            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Aurora, Illinois, United States</p>
+            <p class="card-text">
+              • Developing and supporting cross-platform PC and Mobile diagnostic applications for a wide array of motion control systems developed by CSLLC.<br>
+              • Balancing and managing concurrent projects across a variety of different technologies: React Native, Ionic / Cordova, native Android development, and more.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">Electron</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Mobile Application Development</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Software Engineer Intern at Inventus Power -->
+        <div class="timeline-item timeline-item-right" data-aos="fade-left">
+          <div class="timeline-content">
+            <div class="d-flex align-center gap-2 mb-2">
+              <a href="https://inventuspower.com/" target="_blank">
+                <img src="images/IP.jpeg" alt="Inventus Power" class="card-logo">
+              </a>
+              <div>
+                <h3 class="card-title">
+                  <a href="https://inventuspower.com/" target="_blank">Software Engineer Intern</a>
+                </h3>
+                <p class="card-subtitle"><i class="fas fa-building"></i> Inventus Power</p>
+              </div>
+            </div>
+            <p class="mb-1"><i class="fas fa-calendar"></i> May 2023 - Dec 2023</p>
+            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Bolingbrook, Illinois, United States</p>
+            <p class="card-text">
+              • Spent time developing a cross-platform desktop application designed for real-time reception and decoding of CAN messages. This tool was designed to upload signals to the cloud and enable dynamic graphing of real-time data.<br>
+              • Took the lead in the development of a cross-platform mobile application for Inventus Power's Light Electric Vehicle (LEV) team. This tool Provides accessible, real-time battery analytics and visualization, enhancing the management of battery fleets<br>
+              • Utilized a large-scale Influx database for the extraction, parsing, and formatting of essential battery analytics, serving as the critical backbone of the application's data visualization capabilities
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">Electron</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">InfluxDB</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Apple Experience -->
+        <div class="timeline-item timeline-item-left" data-aos="fade-right">
+          <div class="timeline-content">
+            <div class="d-flex align-center gap-2 mb-2">
+              <a href="https://www.apple.com/" target="_blank">
+                <img src="images/Apple.PNG" alt="Apple" class="card-logo">
+              </a>
+              <div>
+                <h3 class="card-title">
+                  <a href="https://www.apple.com/" target="_blank">Technical Expert</a>
+                </h3>
+                <p class="card-subtitle"><i class="fas fa-building"></i> Apple</p>
+              </div>
+            </div>
+            <p class="mb-1"><i class="fas fa-calendar"></i> May 2022 - May 2023</p>
+            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Chicago, Illinois, United States</p>
+            <p class="card-text">
+              • Progressed quickly through the Genius Bar from an entry level Specialist to a Technical Specialist, and then finally to a Technical Expert within the course of 10 months.<br>
+              • Was the top technician at Apple Lincoln Park, one of the busiest Genius Bar locations in the country, within my first quarter.<br>
+              • Troubleshot, diagnosed, and performed repairs on iOS devices, Apple TV, Apple Watch, Beats and their accompanying software.<br>
+              • Mentored Technical Specialists on technical and customer service issues.<br>
+              • Documented all pertinent user information and problems with accuracy in all store supported systems.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">iPhone Repair</span>
+              <span class="skill-tag">Mentoring</span>
+              <span class="skill-tag">iOS</span>
+              <span class="skill-tag">Technical Support</span>
+              <span class="skill-tag">Customer Service</span>
+            </div>
+            
+            <div class="mt-3 mb-3" style="border-left: 2px solid var(--accent); padding-left: 15px;">
+              <h4 class="mb-1">Previous Roles at Apple</h4>
+              <p class="mb-1"><strong>Technical Specialist</strong> - Oct 2021 - May 2022</p>
+              <p class="mb-1"><strong>Specialist</strong> - Aug 2021 - Oct 2021</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Software Engineer Intern at Control Solutions LLC -->
+        <div class="timeline-item timeline-item-right" data-aos="fade-left">
+          <div class="timeline-content">
+            <div class="d-flex align-center gap-2 mb-2">
+              <a href="https://www.controls.com/" target="_blank">
+                <img src="images/controls.PNG" alt="Control Solutions LLC" class="card-logo">
+              </a>
+              <div>
+                <h3 class="card-title">
+                  <a href="https://www.controls.com/" target="_blank">Software Engineer Intern</a>
+                </h3>
+                <p class="card-subtitle"><i class="fas fa-building"></i> Control Solutions LLC</p>
+              </div>
+            </div>
+            <p class="mb-1"><i class="fas fa-calendar"></i> Dec 2020 - Jan 2021</p>
+            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Aurora, Illinois, United States</p>
+            <p class="card-text">
+              • Developed automated testing protocols for the Phoenix motor controller.<br>
+              • Managed the testing and monitoring of current, resistance and other electrical variables through the motor controller system.<br>
+              • Worked with C++, Qt, Raspberry Pi and embedded systems.<br>
+              • Built a GUI hub to interface with power supply, battery charger, digital multimeter, DAC and a series of relays for product testing.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">Qt</span>
+              <span class="skill-tag">Raspberry Pi</span>
+              <span class="skill-tag">Embedded Systems</span>
+              <span class="skill-tag">C++</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Web Developer at University of Illinois Chicago -->
+        <div class="timeline-item timeline-item-left" data-aos="fade-right">
+          <div class="timeline-content">
+            <div class="d-flex align-center gap-2 mb-2">
+              <a href="https://satech.uic.edu/" target="_blank">
+                <img src="images/uic.PNG" alt="University of Illinois at Chicago" class="card-logo">
+              </a>
+              <div>
+                <h3 class="card-title">
+                  <a href="https://satech.uic.edu/" target="_blank">Web Developer</a>
+                </h3>
+                <p class="card-subtitle"><i class="fas fa-building"></i> University of Illinois at Chicago</p>
+              </div>
+            </div>
+            <p class="mb-1"><i class="fas fa-calendar"></i> Sep 2020 - Dec 2020</p>
+            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Chicago, Illinois, United States</p>
+            <p class="card-text">
+              • Assessed and managed issue tickets through Jira Cloud.<br>
+              • Developed, tested, and deployed new web-based applications and databases.<br>
+              • Implemented changes to existing web-based applications and databases.<br>
+              • Worked primarily with C# and Node.JS for back-end development and worked with web APIs.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Jira</span>
+              <span class="skill-tag">Postman API</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Lead Backend Developer at Stuudeo -->
+        <div class="timeline-item timeline-item-right" data-aos="fade-left">
+          <div class="timeline-content">
+            <div class="d-flex align-center gap-2 mb-2">
+              <a href="https://stuudeo.com/" target="_blank">
+                <img src="images/Stuudeo.PNG" alt="Stuudeo" class="card-logo">
+              </a>
+              <div>
+                <h3 class="card-title">
+                  <a href="https://stuudeo.com/" target="_blank">Lead Backend Developer</a>
+                </h3>
+                <p class="card-subtitle"><i class="fas fa-building"></i> Stuudeo</p>
+              </div>
+            </div>
+            <p class="mb-1"><i class="fas fa-calendar"></i> Mar 2020 - Aug 2020</p>
+            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Naperville, Illinois, United States</p>
+            <p class="card-text">
+              • Lead developer for backend website functionality and accompanying databases.<br>
+              • Integrated APIs to assist with image compression and data storage.<br>
+              • Worked heavily with PHP, SQL, and JavaScript to develop algorithms for the editing and accessing of database information.<br>
+              • Managed the implementation of agile practices to increase project productivity and delivery management.
+            </p>
+            <div class="skills-list">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Education Section -->
-  <div class="w3-padding-64 w3-content" id="education">
-    <h2 class="w3-text-light-grey">Education</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <!-- Add your education here -->
-    <!-- Example -->
-    <div class="w3-container">
-      <h5 class="w3-opacity"><b>University of Illinois at Chicago</b></h5>
-      <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>December 2023</h6>
-      <p>Bachelor of Science, Computer Science — College of Engineering</p>
-      <hr>
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <h2>Education</h2>
+      </div>
+      
+      <div class="card" data-aos="fade-up">
+        <div class="card-content">
+          <div class="d-flex align-center gap-2 mb-2">
+            <div class="contact-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div>
+              <h3 class="card-title">University of Illinois at Chicago</h3>
+              <p class="card-subtitle">December 2023</p>
+            </div>
+          </div>
+          <p class="card-text">Bachelor of Science, Computer Science — College of Engineering</p>
+        </div>
+      </div>
     </div>
-    <!-- Repeat for other educational qualifications -->
-  </div>
+  </section>
 
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, IL</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (847)-393-5428</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: me@seankudrna.com</p>
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-right">
+        <h2>Contact Me</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-item pulse" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-info">
+            <h3>Location</h3>
+            <p>Chicago, IL</p>
+          </div>
+        </div>
+        
+        <div class="contact-item pulse" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-info">
+            <h3>Phone</h3>
+            <p>(847)-393-5428</p>
+          </div>
+        </div>
+        
+        <div class="contact-item pulse" data-aos="fade-up" data-aos-delay="300">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-info">
+            <h3>Email</h3>
+            <p>me@seankudrna.com</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">© 2025 Sean Kudrna. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/seankudrna/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/SeanKudrna" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
     </div>
-  
-    <!-- Footer -->
-    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-      <a href="https://www.linkedin.com/in/seankudrna/" class="w3-hover-opacity"><i class="fa fa-linkedin"></i></a>
-      <a href="https://github.com/SeanKudrna" class="w3-hover-opacity"><i class="fa fa-github"></i></a>
-    </footer>
-  
-  <!-- END PAGE CONTENT -->
-  </div>
-  
-  </body>
-  </html>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease',
+      once: true,
+      offset: 100
+    });
+    
+    // Navigation functionality
+    const header = document.getElementById('header');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    
+    // Sticky header on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('header-scrolled');
+      } else {
+        header.classList.remove('header-scrolled');
+      }
+    });
+    
+    // Mobile menu toggle
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      hamburger.innerHTML = navLinks.classList.contains('nav-active') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+    });
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('nav-active');
+        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+    
+    // Active link highlight
+    const sections = document.querySelectorAll('section');
+    
+    window.addEventListener('scroll', () => {
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        if (pageYOffset >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === current) {
+          link.classList.add('active');
+        }
+        
+        // Set About as active when at the top (home section)
+        if (current === 'home' && window.scrollY < 200) {
+          document.querySelector('.nav-links a[href="#about"]').classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
   
