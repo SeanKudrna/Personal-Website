@@ -1,161 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Sean P. Kudrna | Software Engineer</title>
+  <title>Sean P. Kudrna | Elite Software Engineer</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sean P. Kudrna - Software Engineer with expertise in React Native, Electron, and more">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <meta name="description" content="Sean P. Kudrna - Elite Software Engineer crafting innovative solutions with cutting-edge technology">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <span class="control red"></span>
+            <span class="control yellow"></span>
+            <span class="control green"></span>
+          </div>
+          <div class="terminal-title">sean@portfolio:~$</div>
+          <div class="terminal-actions">
+            <i class="fas fa-minus"></i>
+            <i class="fas fa-square"></i>
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="terminal-body">
+          <!-- ASCII Art Header -->
+          <div class="ascii-header">
+            <div class="ascii-line">╔══════════════════════════════════════╗</div>
+            <div class="ascii-line">║    🚀 SEAN KUDRNA PORTFOLIO v2.0    ║</div>
+            <div class="ascii-line">║         Elite Software Engineer       ║</div>
+            <div class="ascii-line">╚══════════════════════════════════════╝</div>
+          </div>
+          
+          <div class="terminal-line">
+            <span class="prompt">sean@portfolio:~$</span>
+            <span class="command">node portfolio.js --verbose</span>
+          </div>
+          
+          <div class="system-info">
+            <div class="info-line">
+              <span class="label">System:</span>
+              <span class="value">Portfolio Engine v2.0.1</span>
+            </div>
+            <div class="info-line">
+              <span class="label">Node:</span>
+              <span class="value">v18.17.0</span>
+            </div>
+            <div class="info-line">
+              <span class="label">Location:</span>
+              <span class="value">Chicago, IL 🌆</span>
+            </div>
+          </div>
+          
+          <div class="code-output">
+            <div class="code-line">
+              <span class="line-prefix">></span>
+              <span class="keyword">const</span> 
+              <span class="variable">developer</span> 
+              <span class="operator">=</span> 
+              <span class="keyword">new</span> 
+              <span class="class-name">Sean</span><span class="punctuation">();</span>
+            </div>
+            
+            <div class="code-line">
+              <span class="line-prefix">></span>
+              <span class="variable">developer</span><span class="punctuation">.</span><span class="method">initialize</span><span class="punctuation">({</span>
+            </div>
+            
+            <div class="code-line">
+              <span class="line-prefix">  </span>
+              <span class="property">experience</span><span class="punctuation">:</span> <span class="string">'3 years'</span><span class="punctuation">,</span>
+            </div>
+            
+            <div class="code-line">
+              <span class="line-prefix">  </span>
+              <span class="property">passion</span><span class="punctuation">:</span> <span class="string">'Infinite'</span><span class="punctuation">,</span>
+            </div>
+            
+            <div class="code-line">
+              <span class="line-prefix">></span>
+              <span class="punctuation">});</span>
+            </div>
+            
+            <div class="code-line">
+              <span class="line-prefix">></span>
+              <span class="variable">developer</span><span class="punctuation">.</span><span class="method">loadSkills</span><span class="punctuation">([</span>
+            </div>
+            
+            <div class="code-line">
+              <span class="line-prefix">  </span>
+              <span class="string">'React Native'</span><span class="punctuation">,</span> 
+              <span class="string">'IoT'</span><span class="punctuation">,</span> 
+              <span class="string">'C++'</span><span class="punctuation">,</span> 
+              <span class="string">'AWS'</span><span class="punctuation">,</span>
+            </div>
+            
+            <div class="code-line">
+              <span class="line-prefix">  </span>
+              <span class="string">'JavaScript'</span><span class="punctuation">,</span> 
+              <span class="string">'Python'</span><span class="punctuation">,</span> 
+              <span class="string">'Innovation'</span>
+            </div>
+            
+            <div class="code-line">
+              <span class="line-prefix">></span>
+              <span class="punctuation">]);</span>
+            </div>
+            
+            <div class="code-line">
+              <span class="line-prefix">></span>
+              <span class="variable">developer</span><span class="punctuation">.</span><span class="method">setLocation</span><span class="punctuation">(</span><span class="string">'Chicago, IL'</span><span class="punctuation">);</span>
+            </div>
+            
+            <div class="code-line">
+              <span class="line-prefix">></span>
+              <span class="variable">developer</span><span class="punctuation">.</span><span class="method">enableAwesomeMode</span><span class="punctuation">();</span>
+            </div>
+            
+            <div class="code-line log-line">
+              <span class="line-prefix">ℹ</span>
+              <span class="log-info">Compiling portfolio assets...</span>
+            </div>
+            
+            <div class="code-line log-line">
+              <span class="line-prefix">⚡</span>
+              <span class="log-info">Optimizing user experience...</span>
+            </div>
+            
+            <div class="code-line log-line">
+              <span class="line-prefix">🔥</span>
+              <span class="log-info">Initializing awesome mode...</span>
+            </div>
+            
+            <div class="code-line success-line">
+              <span class="line-prefix">✅</span>
+              <span class="success">Portfolio compiled successfully!</span>
+            </div>
+          </div>
+          
+          <div class="progress-section">
+            <div class="progress-label">
+              <span class="loading-text">
+                <i class="fas fa-rocket"></i>
+                Launching portfolio
+              </span>
+              <span class="loading-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+              <div class="progress-percentage">0%</div>
+            </div>
+            <div class="progress-stats">
+              <span class="stat">Files: <span class="stat-value" id="fileCount">0</span>/47</span>
+              <span class="stat">Speed: <span class="stat-value" id="loadSpeed">0</span> MB/s</span>
+            </div>
+          </div>
+          
+          <div class="cursor-line">
+            <span class="prompt">sean@portfolio:~$</span>
+            <span class="cursor-blink">_</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cursor Follower -->
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Background Effects -->
+  <div class="background-effects">
+    <div class="floating-shapes"></div>
+    <canvas id="particleCanvas"></canvas>
+  </div>
+
   <!-- Header / Navigation -->
   <header class="header" id="header">
     <div class="container">
-      <div class="navbar">
-        <a href="#" class="logo">
+      <nav class="navbar">
+        <a href="#" class="logo" data-aos="fade-right">
+          <div class="logo-icon">
           <img src="images/SPKLogo.png" alt="Sean Kudrna Logo">
-          <span>Sean Kudrna</span>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">
+              <span class="logo-name-full">Sean Kudrna</span>
+              <span class="logo-name-short">Sean</span>
+            </span>
+            <span class="logo-title">
+              <span class="logo-title-full">Software Engineer</span>
+              <span class="logo-title-short">SWE</span>
+            </span>
+          </div>
         </a>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
+        
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" data-section="home">Home</a></li>
+          <li><a href="#about" data-section="about">About</a></li>
+          <li><a href="#skills" data-section="skills">Skills</a></li>
+          <li><a href="#portfolio" data-section="portfolio">Portfolio</a></li>
+          <li><a href="#experience" data-section="experience">Experience</a></li>
+          <li><a href="#contact" data-section="contact">Contact</a></li>
         </ul>
-        <button class="hamburger" id="hamburger">
-          <i class="fas fa-bars"></i>
+        
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
       </div>
+      </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="container d-flex align-center">
+    <div class="hero-background">
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container">
       <div class="hero-content">
-        <h1 class="hero-title fade-in delay-1">
-          Hi, I'm Sean P. Kudrna
+        <div class="hero-text" data-aos="fade-up" data-aos-delay="300">
+          <div class="hero-greeting">
+            <span class="typing-text">Hello, I'm</span>
+          </div>
+          <h1 class="hero-name">
+            <span class="name-highlight">Sean P. Kudrna</span>
         </h1>
-        <h2 class="hero-subtitle fade-in delay-2">
-          Software Engineer
+          <div class="hero-title-container">
+            <h2 class="hero-title">
+              I craft <span class="rotating-text" data-words="innovative solutions,elegant interfaces,scalable applications,digital experiences"></span>
         </h2>
-        <p class="hero-description fade-in delay-3">
-          As a forward-thinking and innovative Software Developer, I bring a blend of robust technical skills and a passion for pushing the boundaries of technology.
-        </p>
-        <div class="d-flex gap-2 fade-in delay-4 justify-center">
-          <a href="#contact" class="btn btn-primary">
-            <i class="fas fa-envelope"></i> Contact Me
-          </a>
-          <a href="/images/Resume.pdf" download class="btn btn-outline">
-            <i class="fas fa-download"></i> Resume
-          </a>
+          </div>
+          <p class="hero-description">
+            Passionate software engineer with expertise in full-stack development, 
+            mobile applications, and cutting-edge technologies. I transform ideas 
+            into powerful digital solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">
+              <span>View My Work</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Let's Talk</span>
+              <i class="fas fa-comments"></i>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+              <span class="stat-number" data-count="6">0</span>
+              <span class="stat-label">Companies & Organizations</span>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="700">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-label">Industry Sectors</span>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="800">
+              <span class="stat-number" data-count="8">0</span>
+              <span class="stat-label">Core Technologies</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-controls">
+                <span class="control red"></span>
+                <span class="control yellow"></span>
+                <span class="control green"></span>
+              </div>
+              <div class="window-title">portfolio.js</div>
+            </div>
+            <div class="window-content">
+              <div class="code-line">
+                <span class="line-number">1</span>
+                <span class="code-text">
+                  <span class="keyword">class</span> 
+                  <span class="class-name">SoftwareEngineer</span> 
+                  <span class="punctuation">{</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">2</span>
+                <span class="code-text">
+                  <span class="indent">  </span>
+                  <span class="keyword">constructor</span>
+                  <span class="punctuation">() {</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">3</span>
+                <span class="code-text">
+                  <span class="indent">    </span>
+                  <span class="keyword">this</span>
+                  <span class="punctuation">.</span>
+                  <span class="property">name</span>
+                  <span class="operator"> = </span>
+                  <span class="string">'Sean Kudrna'</span>
+                  <span class="punctuation">;</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">4</span>
+                <span class="code-text">
+                  <span class="indent">    </span>
+                  <span class="keyword">this</span>
+                  <span class="punctuation">.</span>
+                  <span class="property">skills</span>
+                  <span class="operator"> = </span>
+                  <span class="punctuation">[</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">5</span>
+                <span class="code-text">
+                  <span class="indent">      </span>
+                  <span class="string">'React Native'</span>
+                  <span class="punctuation">, </span>
+                  <span class="string">'IoT'</span>
+                  <span class="punctuation">, </span>
+                  <span class="string">'AWS'</span>
+                  <span class="punctuation">,</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">6</span>
+                <span class="code-text">
+                  <span class="indent">      </span>
+                  <span class="string">'Embedded Systems'</span>
+                  <span class="punctuation">, </span>
+                  <span class="string">'C++'</span>
+                  <span class="punctuation">,</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">7</span>
+                <span class="code-text">
+                  <span class="indent">      </span>
+                  <span class="string">'JavaScript'</span>
+                  <span class="punctuation">, </span>
+                  <span class="string">'Python'</span>
+                  <span class="punctuation">, </span>
+                  <span class="string">'PHP'</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">8</span>
+                <span class="code-text">
+                  <span class="indent">    </span>
+                  <span class="punctuation">];</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">9</span>
+                <span class="code-text">
+                  <span class="indent">    </span>
+                  <span class="keyword">this</span>
+                  <span class="punctuation">.</span>
+                  <span class="property">experience</span>
+                  <span class="operator"> = </span>
+                  <span class="string">'Full-Stack + IoT'</span>
+                  <span class="punctuation">;</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">10</span>
+                <span class="code-text">
+                  <span class="indent">  </span>
+                  <span class="punctuation">}</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">11</span>
+                <span class="code-text">
+                  <span class="punctuation">}</span>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="section" id="about">
+  <section class="section about" id="about">
     <div class="container">
-      <div class="section-header" data-aos="fade-right">
+      <div class="section-header" data-aos="fade-down">
+        <span class="section-number">01</span>
         <h2>About Me</h2>
+        <p>Passionate about creating exceptional digital experiences</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="200">
-        <p>
-          As a forward-thinking and innovative Software Developer, I bring a blend of robust technical skills and a passion for pushing the boundaries of technology. With a strong foundation in computer science and hands-on experience in software engineering, I have honed my ability to develop and implement sophisticated solutions. My journey through various roles has been marked by a commitment to excellence, a knack for problem-solving, and an unwavering dedication to achieving project objectives.
-        </p>
-        <p>
-          My experience spans across desktop and mobile application development, database management, and automated system testing, showcasing a versatile skill set. I am particularly adept in leveraging modern programming languages and development frameworks to bring creative ideas to life, ensuring optimal functionality and user experience. My proficiency extends to managing and parsing large datasets, where my analytical acumen comes to the forefront. With each project, I aim to contribute significantly, driving innovation and efficiency.
-        </p>
+      
+      <div class="about-content">
+        <div class="about-text" data-aos="fade-right">
+          <div class="about-intro">
+            <h3>Creative Problem Solver & Tech Enthusiast</h3>
+            <p>
+              I'm a forward-thinking software engineer who thrives on turning complex challenges 
+              into elegant solutions. With a strong foundation in computer science and hands-on 
+              experience across multiple technologies, I specialize in creating robust, scalable 
+              applications that make a real impact.
+            </p>
+          </div>
+          
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <div class="highlight-content">
+                <h4>Innovation Driven</h4>
+                <p>Always exploring cutting-edge technologies and methodologies</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="highlight-content">
+                <h4>Team Collaboration</h4>
+                <p>Excellent communication and teamwork in agile environments</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="highlight-content">
+                <h4>Results Focused</h4>
+                <p>Committed to delivering high-quality solutions on time</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-actions">
+            <a href="/images/Resume.pdf" download class="btn btn-outline">
+              <i class="fas fa-download"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="about-visual" data-aos="fade-left">
+          <div class="profile-card">
+            <div class="profile-image">
+              <img src="images/Sean.jpg" alt="Sean Kudrna">
+              <div class="profile-overlay">
+                <div class="profile-status">
+                  <div class="status-dot"></div>
+                  <span>Available for new opportunities</span>
+                </div>
+              </div>
+            </div>
+            <div class="profile-info">
+              <h3>Sean P. Kudrna</h3>
+              <p>Software Engineer</p>
+              <div class="profile-social">
+                <a href="https://github.com/SeanKudrna" target="_blank" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/seankudrna" target="_blank" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:spkudrna@gmail.com" aria-label="Email">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section class="section" id="skills">
+  <section class="section skills" id="skills">
     <div class="container">
-      <div class="section-header" data-aos="fade-right">
-        <h2>Skills & Certifications</h2>
+      <div class="section-header" data-aos="fade-down">
+        <span class="section-number">02</span>
+        <h2>Skills & Expertise</h2>
+        <p>Technologies I've mastered and tools I use daily</p>
       </div>
       
-      <div class="skills-grid">
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <div class="card-content">
-            <h3><i class="fas fa-code"></i> Languages</h3>
-            <div class="skills-list">
-              <span class="skill-tag">C++</span>
-              <span class="skill-tag">C</span>
-              <span class="skill-tag">C#</span>
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">JavaScript</span>
+      <div class="skills-content">
+        <!-- Skills Matrix -->
+        <div class="skills-matrix" data-aos="fade-up">
+          <div class="matrix-header">
+            <h3>Technical Expertise Matrix</h3>
+            <p>Proficiency across development domains</p>
+          </div>
+          
+          <div class="skills-hexagon-grid">
+            <!-- Core Technologies -->
+            <div class="skill-hexagon expert" data-aos="zoom-in" data-aos-delay="100">
+              <div class="hexagon-inner">
+                <div class="skill-icon">
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="skill-level">Expert</div>
+                <div class="skill-name">JavaScript</div>
+              </div>
+            </div>
+            
+            <div class="skill-hexagon expert" data-aos="zoom-in" data-aos-delay="150">
+              <div class="hexagon-inner">
+                <div class="skill-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="skill-level">Expert</div>
+                <div class="skill-name">React Native</div>
+              </div>
+            </div>
+            
+            <div class="skill-hexagon expert" data-aos="zoom-in" data-aos-delay="200">
+              <div class="hexagon-inner">
+                <div class="skill-icon">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <div class="skill-level">Expert</div>
+                <div class="skill-name">C++</div>
+              </div>
+            </div>
+            
+            <div class="skill-hexagon proficient" data-aos="zoom-in" data-aos-delay="250">
+              <div class="hexagon-inner">
+                <div class="skill-icon">
+                  <i class="fas fa-wifi"></i>
+                </div>
+                <div class="skill-level">Proficient</div>
+                <div class="skill-name">IoT Systems</div>
+              </div>
+            </div>
+            
+            <div class="skill-hexagon proficient" data-aos="zoom-in" data-aos-delay="300">
+              <div class="hexagon-inner">
+                <div class="skill-icon">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <div class="skill-level">Proficient</div>
+                <div class="skill-name">Node.js</div>
+              </div>
+            </div>
+            
+            <div class="skill-hexagon intermediate" data-aos="zoom-in" data-aos-delay="350">
+              <div class="hexagon-inner">
+                <div class="skill-icon">
+                  <i class="fab fa-aws"></i>
+                </div>
+                <div class="skill-level">Intermediate</div>
+                <div class="skill-name">AWS</div>
+              </div>
+            </div>
+            
+            <div class="skill-hexagon proficient" data-aos="zoom-in" data-aos-delay="400">
+              <div class="hexagon-inner">
+                <div class="skill-icon">
+                  <i class="fab fa-php"></i>
+                </div>
+                <div class="skill-level">Proficient</div>
+                <div class="skill-name">PHP</div>
+              </div>
+            </div>
+            
+            <div class="skill-hexagon intermediate" data-aos="zoom-in" data-aos-delay="450">
+              <div class="hexagon-inner">
+                <div class="skill-icon">
+                  <i class="fab fa-python"></i>
+                </div>
+                <div class="skill-level">Intermediate</div>
+                <div class="skill-name">Python</div>
+              </div>
             </div>
           </div>
         </div>
-        
-        <div class="card" data-aos="fade-up" data-aos-delay="200">
-          <div class="card-content">
-            <h3><i class="fas fa-globe"></i> Web Development</h3>
-            <div class="skills-list">
-              <span class="skill-tag">PHP</span>
-              <span class="skill-tag">HTML</span>
-              <span class="skill-tag">CSS</span>
-              <span class="skill-tag">Node.JS</span>
-              <span class="skill-tag">React</span>
+
+        <!-- Domain Expertise -->
+        <div class="domain-expertise" data-aos="fade-up" data-aos-delay="500">
+          <h3>Domain Specializations</h3>
+          <div class="expertise-cards">
+            <div class="expertise-card embedded" data-aos="flip-left" data-aos-delay="600">
+              <div class="card-icon">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h4>Embedded Systems</h4>
+              <p>Firmware development for IoT devices with real-time data transmission via MQTT protocols</p>
+              <div class="expertise-tags">
+                <span>C++</span>
+                <span>MQTT</span>
+                <span>Real-time</span>
+              </div>
+            </div>
+            
+            <div class="expertise-card mobile" data-aos="flip-left" data-aos-delay="700">
+              <div class="card-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h4>Cross-Platform Mobile</h4>
+              <p>Native and hybrid mobile applications for iOS, Android, and desktop platforms</p>
+              <div class="expertise-tags">
+                <span>React Native</span>
+                <span>Ionic</span>
+                <span>Cordova</span>
+              </div>
+            </div>
+            
+            <div class="expertise-card data" data-aos="flip-left" data-aos-delay="800">
+              <div class="card-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h4>Data Visualization</h4>
+              <p>Real-time analytics dashboards and battery monitoring systems with large-scale databases</p>
+              <div class="expertise-tags">
+                <span>InfluxDB</span>
+                <span>CAN Protocol</span>
+                <span>Analytics</span>
+              </div>
+            </div>
+            
+            <div class="expertise-card cloud" data-aos="flip-left" data-aos-delay="900">
+              <div class="card-icon">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <h4>Cloud Integration</h4>
+              <p>AWS IoT solutions and cloud-based data processing for connected device ecosystems</p>
+              <div class="expertise-tags">
+                <span>AWS IoT</span>
+                <span>Cloud APIs</span>
+                <span>Scalability</span>
+              </div>
             </div>
           </div>
         </div>
-        
-        <div class="card" data-aos="fade-up" data-aos-delay="300">
-          <div class="card-content">
-            <h3><i class="fas fa-mobile-alt"></i> App Development</h3>
-            <div class="skills-list">
-              <span class="skill-tag">React Native</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">Electron</span>
-              <span class="skill-tag">Ionic</span>
-              <span class="skill-tag">Cordova</span>
+
+        <!-- Certifications -->
+        <div class="certifications" data-aos="fade-up" data-aos-delay="1000">
+          <h3>Professional Certifications</h3>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-icon">
+                <i class="fab fa-aws"></i>
+              </div>
+              <div class="cert-info">
+                <h4>AWS Cloud Technical Essentials</h4>
+                <p>Amazon Web Services</p>
+              </div>
             </div>
-          </div>
-        </div>
-        
-        <div class="card" data-aos="fade-up" data-aos-delay="400">
-          <div class="card-content">
-            <h3><i class="fas fa-database"></i> Database</h3>
-            <div class="skills-list">
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">SQLite</span>
-              <span class="skill-tag">InfluxDB</span>
-              <span class="skill-tag">Flux</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card" data-aos="fade-up" data-aos-delay="500">
-          <div class="card-content">
-            <h3><i class="fas fa-certificate"></i> Certifications</h3>
-            <div class="skills-list">
-              <span class="skill-tag">AWS Cloud Technical Essentials</span>
-              <span class="skill-tag">Architecting Solutions on AWS</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card" data-aos="fade-up" data-aos-delay="600">
-          <div class="card-content">
-            <h3><i class="fas fa-tools"></i> Other</h3>
-            <div class="skills-list">
-              <span class="skill-tag">Agile Methodologies</span>
-              <span class="skill-tag">Jira Cloud</span>
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">Android Studio</span>
-              <span class="skill-tag">Bitbucket</span>
-              <span class="skill-tag">Git</span>
+            <div class="cert-card">
+              <div class="cert-icon">
+                <i class="fab fa-aws"></i>
+              </div>
+              <div class="cert-info">
+                <h4>Architecting Solutions on AWS</h4>
+                <p>Amazon Web Services</p>
+              </div>
             </div>
           </div>
         </div>
@@ -164,14 +693,12 @@
   </section>
 
   <!-- Portfolio Section -->
-  <section class="section" id="portfolio">
+  <section class="section portfolio" id="portfolio">
     <div class="container">
-      <div class="section-header" data-aos="fade-right">
+      <div class="section-header" data-aos="fade-down">
+        <span class="section-number">03</span>
         <h2>Portfolio</h2>
-      </div>
-      
-      <div class="mb-4" data-aos="fade-up">
-        <p>Check out my GitHub repositories to see examples of my work and projects.</p>
+        <p>Check out my GitHub repositories to see examples of my work and projects</p>
       </div>
       
       <div class="portfolio-showcase" data-aos="fade-up">
@@ -208,266 +735,219 @@
   </section>
 
   <!-- Experience Section -->
-  <section class="section" id="experience">
+  <section class="section experience" id="experience">
     <div class="container">
-      <div class="section-header" data-aos="fade-right">
-        <h2>Work Experience</h2>
+      <div class="section-header" data-aos="fade-down">
+        <span class="section-number">04</span>
+        <h2>Professional Journey</h2>
+        <p>My career path and professional achievements</p>
       </div>
       
-      <div class="timeline">
-        <!-- Software Engineer at Control Solutions LLC -->
-        <div class="timeline-item timeline-item-left" data-aos="fade-right">
+      <div class="experience-timeline">
+        <div class="timeline-line"></div>
+        
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+          <div class="timeline-marker">
+            <div class="marker-inner"></div>
+          </div>
           <div class="timeline-content">
-            <div class="d-flex align-center gap-2 mb-2">
-              <a href="https://www.controls.com/" target="_blank">
-                <img src="images/controls.PNG" alt="Control Solutions LLC" class="card-logo">
-              </a>
-              <div>
-                <h3 class="card-title">
-                  <a href="https://www.controls.com/" target="_blank">Software Engineer</a>
-                </h3>
-                <p class="card-subtitle"><i class="fas fa-building"></i> Control Solutions LLC</p>
-              </div>
+            <div class="timeline-company">
+              <img src="images/HellowLab.png" alt="HellowLab Logo" class="company-logo">
             </div>
-            <p class="mb-1"><i class="fas fa-calendar"></i> Jan 2024 - Present</p>
-            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Aurora, Illinois, United States</p>
-            <p class="card-text">
-              • Developing and supporting cross-platform PC and Mobile diagnostic applications for a wide array of motion control systems developed by CSLLC.<br>
-              • Balancing and managing concurrent projects across a variety of different technologies: React Native, Ionic / Cordova, native Android development, and more.
-            </p>
-            <div class="skills-list">
-              <span class="skill-tag">Electron</span>
-              <span class="skill-tag">React Native</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Mobile Application Development</span>
+            <div class="timeline-date">May 2024 - May 2025</div>
+            <h3>Founder</h3>
+            <h4>HellowLab</h4>
+            <p>Led the development and innovation of digital solutions at hellowlab.com, a dynamic startup focused on enhancing collaboration and efficiency for businesses. Oversaw projects leveraging web development, cloud computing, app development and AI.</p>
+            <div class="timeline-skills">
+              <span>Web Development</span>
+              <span>Cloud Computing</span>
+              <span>AI</span>
+              <span>App Development</span>
             </div>
           </div>
         </div>
         
-        <!-- Software Engineer Intern at Inventus Power -->
-        <div class="timeline-item timeline-item-right" data-aos="fade-left">
+        <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+          <div class="timeline-marker">
+            <div class="marker-inner"></div>
+          </div>
           <div class="timeline-content">
-            <div class="d-flex align-center gap-2 mb-2">
-              <a href="https://inventuspower.com/" target="_blank">
-                <img src="images/IP.jpeg" alt="Inventus Power" class="card-logo">
-              </a>
-              <div>
-                <h3 class="card-title">
-                  <a href="https://inventuspower.com/" target="_blank">Software Engineer Intern</a>
-                </h3>
-                <p class="card-subtitle"><i class="fas fa-building"></i> Inventus Power</p>
+            <div class="timeline-company">
+              <img src="images/controls.PNG" alt="Control Solutions LLC Logo" class="company-logo">
+              <div class="timeline-link">
+                <a href="https://www.controls.com/" target="_blank" class="company-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
               </div>
             </div>
-            <p class="mb-1"><i class="fas fa-calendar"></i> May 2023 - Dec 2023</p>
-            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Bolingbrook, Illinois, United States</p>
-            <p class="card-text">
-              • Spent time developing a cross-platform desktop application designed for real-time reception and decoding of CAN messages. This tool was designed to upload signals to the cloud and enable dynamic graphing of real-time data.<br>
-              • Took the lead in the development of a cross-platform mobile application for Inventus Power's Light Electric Vehicle (LEV) team. This tool Provides accessible, real-time battery analytics and visualization, enhancing the management of battery fleets<br>
-              • Utilized a large-scale Influx database for the extraction, parsing, and formatting of essential battery analytics, serving as the critical backbone of the application's data visualization capabilities
-            </p>
-            <div class="skills-list">
-              <span class="skill-tag">Electron</span>
-              <span class="skill-tag">React Native</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">InfluxDB</span>
+            <div class="timeline-date">January 2024 - Present</div>
+            <h3>Software Engineer</h3>
+            <h4>Control Solutions LLC</h4>
+            <p>Designing and developing embedded firmware for IoT-enabled devices, ensuring seamless real-time data transmission to AWS via MQTT. Developing cross-platform PC and Mobile diagnostic applications for motion control systems.</p>
+            <div class="timeline-skills">
+              <span>IoT</span>
+              <span>AWS</span>
+              <span>MQTT</span>
+              <span>React Native</span>
+              <span>Embedded Systems</span>
             </div>
           </div>
         </div>
         
-        <!-- Apple Experience -->
-        <div class="timeline-item timeline-item-left" data-aos="fade-right">
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+          <div class="timeline-marker">
+            <div class="marker-inner"></div>
+          </div>
           <div class="timeline-content">
-            <div class="d-flex align-center gap-2 mb-2">
-              <a href="https://www.apple.com/" target="_blank">
-                <img src="images/Apple.PNG" alt="Apple" class="card-logo">
-              </a>
-              <div>
-                <h3 class="card-title">
-                  <a href="https://www.apple.com/" target="_blank">Technical Expert</a>
-                </h3>
-                <p class="card-subtitle"><i class="fas fa-building"></i> Apple</p>
+            <div class="timeline-company">
+              <img src="images/IP.jpeg" alt="Inventus Power Logo" class="company-logo">
+              <div class="timeline-link">
+                <a href="https://inventuspower.com/" target="_blank" class="company-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
               </div>
             </div>
-            <p class="mb-1"><i class="fas fa-calendar"></i> May 2022 - May 2023</p>
-            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Chicago, Illinois, United States</p>
-            <p class="card-text">
-              • Progressed quickly through the Genius Bar from an entry level Specialist to a Technical Specialist, and then finally to a Technical Expert within the course of 10 months.<br>
-              • Was the top technician at Apple Lincoln Park, one of the busiest Genius Bar locations in the country, within my first quarter.<br>
-              • Troubleshot, diagnosed, and performed repairs on iOS devices, Apple TV, Apple Watch, Beats and their accompanying software.<br>
-              • Mentored Technical Specialists on technical and customer service issues.<br>
-              • Documented all pertinent user information and problems with accuracy in all store supported systems.
-            </p>
-            <div class="skills-list">
-              <span class="skill-tag">iPhone Repair</span>
-              <span class="skill-tag">Mentoring</span>
-              <span class="skill-tag">iOS</span>
-              <span class="skill-tag">Technical Support</span>
-              <span class="skill-tag">Customer Service</span>
-            </div>
-            
-            <div class="mt-3 mb-3" style="border-left: 2px solid var(--accent); padding-left: 15px;">
-              <h4 class="mb-1">Previous Roles at Apple</h4>
-              <p class="mb-1"><strong>Technical Specialist</strong> - Oct 2021 - May 2022</p>
-              <p class="mb-1"><strong>Specialist</strong> - Aug 2021 - Oct 2021</p>
+            <div class="timeline-date">May 2023 - December 2023</div>
+            <h3>Software Engineer Intern</h3>
+            <h4>Inventus Power</h4>
+            <p>Developed cross-platform desktop application for real-time CAN message reception and decoding. Led development of mobile application for Light Electric Vehicle battery analytics and visualization using large-scale Influx database.</p>
+            <div class="timeline-skills">
+              <span>Desktop Apps</span>
+              <span>Mobile Apps</span>
+              <span>InfluxDB</span>
+              <span>CAN Protocol</span>
+              <span>Data Visualization</span>
             </div>
           </div>
         </div>
         
-        <!-- Software Engineer Intern at Control Solutions LLC -->
-        <div class="timeline-item timeline-item-right" data-aos="fade-left">
+        <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+          <div class="timeline-marker">
+            <div class="marker-inner"></div>
+          </div>
           <div class="timeline-content">
-            <div class="d-flex align-center gap-2 mb-2">
-              <a href="https://www.controls.com/" target="_blank">
-                <img src="images/controls.PNG" alt="Control Solutions LLC" class="card-logo">
-              </a>
-              <div>
-                <h3 class="card-title">
-                  <a href="https://www.controls.com/" target="_blank">Software Engineer Intern</a>
-                </h3>
-                <p class="card-subtitle"><i class="fas fa-building"></i> Control Solutions LLC</p>
+            <div class="timeline-company">
+              <img src="images/Apple.PNG" alt="Apple Logo" class="company-logo">
+              <div class="timeline-link">
+                <a href="https://www.apple.com/" target="_blank" class="company-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
               </div>
             </div>
-            <p class="mb-1"><i class="fas fa-calendar"></i> Dec 2020 - Jan 2021</p>
-            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Aurora, Illinois, United States</p>
-            <p class="card-text">
-              • Developed automated testing protocols for the Phoenix motor controller.<br>
-              • Managed the testing and monitoring of current, resistance and other electrical variables through the motor controller system.<br>
-              • Worked with C++, Qt, Raspberry Pi and embedded systems.<br>
-              • Built a GUI hub to interface with power supply, battery charger, digital multimeter, DAC and a series of relays for product testing.
-            </p>
-            <div class="skills-list">
-              <span class="skill-tag">Qt</span>
-              <span class="skill-tag">Raspberry Pi</span>
-              <span class="skill-tag">Embedded Systems</span>
-              <span class="skill-tag">C++</span>
+            <div class="timeline-date">May 2022 - May 2023</div>
+            <h3>Technical Expert</h3>
+            <h4>Apple</h4>
+            <p>Progressed from entry-level Specialist to Technical Expert within 10 months. Top technician at Apple Lincoln Park, troubleshooting and repairing iOS devices, Apple TV, Apple Watch, and Beats products while mentoring other specialists.</p>
+            <div class="timeline-skills">
+              <span>iOS</span>
+              <span>Hardware Repair</span>
+              <span>Customer Service</span>
+              <span>Team Leadership</span>
             </div>
           </div>
         </div>
         
-        <!-- Web Developer at University of Illinois Chicago -->
-        <div class="timeline-item timeline-item-left" data-aos="fade-right">
+        <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+          <div class="timeline-marker">
+            <div class="marker-inner"></div>
+          </div>
           <div class="timeline-content">
-            <div class="d-flex align-center gap-2 mb-2">
-              <a href="https://satech.uic.edu/" target="_blank">
-                <img src="images/uic.PNG" alt="University of Illinois at Chicago" class="card-logo">
-              </a>
-              <div>
-                <h3 class="card-title">
-                  <a href="https://satech.uic.edu/" target="_blank">Web Developer</a>
-                </h3>
-                <p class="card-subtitle"><i class="fas fa-building"></i> University of Illinois at Chicago</p>
+            <div class="timeline-company">
+              <img src="images/uic.png" alt="University of Illinois Chicago Logo" class="company-logo">
+              <div class="timeline-link">
+                <a href="https://satech.uic.edu/" target="_blank" class="company-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
               </div>
             </div>
-            <p class="mb-1"><i class="fas fa-calendar"></i> Sep 2020 - Dec 2020</p>
-            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Chicago, Illinois, United States</p>
-            <p class="card-text">
-              • Assessed and managed issue tickets through Jira Cloud.<br>
-              • Developed, tested, and deployed new web-based applications and databases.<br>
-              • Implemented changes to existing web-based applications and databases.<br>
-              • Worked primarily with C# and Node.JS for back-end development and worked with web APIs.
-            </p>
-            <div class="skills-list">
-              <span class="skill-tag">C#</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Jira</span>
-              <span class="skill-tag">Postman API</span>
+            <div class="timeline-date">September 2020 - December 2020</div>
+            <h3>Web Developer</h3>
+            <h4>University of Illinois Chicago</h4>
+            <p>Assessed and managed issue tickets through Jira Cloud. Developed, tested, and deployed new web-based applications and databases. Implemented changes to existing web-based applications and databases, working primarily with C# and Node.JS for back-end development and web APIs.</p>
+            <div class="timeline-skills">
+              <span>C#</span>
+              <span>Node.js</span>
+              <span>Web APIs</span>
+              <span>Jira</span>
             </div>
           </div>
         </div>
         
-        <!-- Lead Backend Developer at Stuudeo -->
-        <div class="timeline-item timeline-item-right" data-aos="fade-left">
+        <div class="timeline-item" data-aos="fade-left" data-aos-delay="600">
+          <div class="timeline-marker">
+            <div class="marker-inner"></div>
+          </div>
           <div class="timeline-content">
-            <div class="d-flex align-center gap-2 mb-2">
-              <a href="https://stuudeo.com/" target="_blank">
-                <img src="images/Stuudeo.PNG" alt="Stuudeo" class="card-logo">
-              </a>
-              <div>
-                <h3 class="card-title">
-                  <a href="https://stuudeo.com/" target="_blank">Lead Backend Developer</a>
-                </h3>
-                <p class="card-subtitle"><i class="fas fa-building"></i> Stuudeo</p>
+            <div class="timeline-company">
+              <img src="images/stuudeo.png" alt="Stuudeo Logo" class="company-logo">
+              <div class="timeline-link">
+                <a href="https://stuudeo.com/" target="_blank" class="company-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
               </div>
             </div>
-            <p class="mb-1"><i class="fas fa-calendar"></i> Mar 2020 - Aug 2020</p>
-            <p class="mb-1"><i class="fas fa-map-marker-alt"></i> Naperville, Illinois, United States</p>
-            <p class="card-text">
-              • Lead developer for backend website functionality and accompanying databases.<br>
-              • Integrated APIs to assist with image compression and data storage.<br>
-              • Worked heavily with PHP, SQL, and JavaScript to develop algorithms for the editing and accessing of database information.<br>
-              • Managed the implementation of agile practices to increase project productivity and delivery management.
-            </p>
-            <div class="skills-list">
-              <span class="skill-tag">PHP</span>
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">HTML</span>
+            <div class="timeline-date">March 2020 - August 2020</div>
+            <h3>Lead Backend Developer</h3>
+            <h4>Stuudeo</h4>
+            <p>Lead developer for backend website functionality and accompanying databases. Integrated APIs for image compression and data storage, working with PHP, SQL, and JavaScript for database algorithms.</p>
+            <div class="timeline-skills">
+              <span>PHP</span>
+              <span>SQL</span>
+              <span>JavaScript</span>
+              <span>API Integration</span>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section class="section" id="education">
-    <div class="container">
-      <div class="section-header" data-aos="fade-right">
-        <h2>Education</h2>
-      </div>
-      
-      <div class="card" data-aos="fade-up">
-        <div class="card-content">
-          <div class="d-flex align-center gap-2 mb-2">
-            <div class="contact-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div>
-              <h3 class="card-title">University of Illinois at Chicago</h3>
-              <p class="card-subtitle">December 2023</p>
-            </div>
-          </div>
-          <p class="card-text">Bachelor of Science, Computer Science — College of Engineering</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="section" id="contact">
+  <section class="section contact" id="contact">
     <div class="container">
-      <div class="section-header" data-aos="fade-right">
-        <h2>Contact Me</h2>
+      <div class="section-header" data-aos="fade-down">
+        <span class="section-number">05</span>
+        <h2>Let's Connect</h2>
+        <p>Ready to collaborate? I'd love to hear from you</p>
       </div>
       
-      <div class="contact-grid">
-        <div class="contact-item pulse" data-aos="fade-up" data-aos-delay="100">
-          <div class="contact-icon">
-            <i class="fas fa-map-marker-alt"></i>
+      <div class="contact-content">
+        <div class="contact-info" data-aos="fade-up">
+          <div class="contact-text">
+            <h3>Ready to start your next project?</h3>
+            <p>I'm always excited to work on innovative projects and collaborate with talented teams. Whether you have a specific project in mind or just want to discuss possibilities, I'd love to hear from you.</p>
           </div>
-          <div class="contact-info">
-            <h3>Location</h3>
-            <p>Chicago, IL</p>
+          
+          <div class="contact-methods">
+            <a href="mailto:spkudrna@gmail.com" class="contact-method">
+              <div class="method-icon">
+                <i class="fas fa-envelope"></i>
           </div>
+              <div class="method-info">
+                <h4>Email</h4>
+                <p>spkudrna@gmail.com</p>
         </div>
-        
-        <div class="contact-item pulse" data-aos="fade-up" data-aos-delay="200">
-          <div class="contact-icon">
-            <i class="fas fa-phone"></i>
+            </a>
+            
+            <a href="https://linkedin.com/in/seankudrna" target="_blank" class="contact-method">
+              <div class="method-icon">
+                <i class="fab fa-linkedin"></i>
           </div>
-          <div class="contact-info">
-            <h3>Phone</h3>
-            <p>(847)-393-5428</p>
+              <div class="method-info">
+                <h4>LinkedIn</h4>
+                <p>Connect with me</p>
           </div>
+            </a>
+            
+            <a href="https://github.com/SeanKudrna" target="_blank" class="contact-method">
+              <div class="method-icon">
+                <i class="fab fa-github"></i>
         </div>
-        
-        <div class="contact-item pulse" data-aos="fade-up" data-aos-delay="300">
-          <div class="contact-icon">
-            <i class="fas fa-envelope"></i>
+              <div class="method-info">
+                <h4>GitHub</h4>
+                <p>Check out my code</p>
           </div>
-          <div class="contact-info">
-            <h3>Email</h3>
-            <p>me@seankudrna.com</p>
+            </a>
           </div>
         </div>
       </div>
@@ -478,14 +958,50 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">© 2025 Sean Kudrna. All Rights Reserved.</p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/seankudrna/" target="_blank" class="social-link">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/SeanKudrna" target="_blank" class="social-link">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="images/SPKLogo.png" alt="Sean Kudrna Logo">
+              <span>Sean Kudrna</span>
+            </div>
+            <p>Crafting innovative digital solutions with passion and precision.</p>
+          </div>
+          
+          <div class="footer-links">
+            <div class="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <h4>Connect</h4>
+              <ul>
+                <li><a href="mailto:spkudrna@gmail.com">Email</a></li>
+                <li><a href="https://linkedin.com/in/seankudrna" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/SeanKudrna" target="_blank">GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <div class="footer-social">
+            <a href="https://github.com/SeanKudrna" target="_blank" aria-label="GitHub">
             <i class="fab fa-github"></i>
           </a>
+            <a href="https://linkedin.com/in/seankudrna" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:spkudrna@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <p>&copy; 2024 Sean P. Kudrna. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -496,66 +1012,320 @@
   <script>
     // Initialize AOS
     AOS.init({
-      duration: 800,
-      easing: 'ease',
+      duration: 1000,
       once: true,
       offset: 100
     });
     
-    // Navigation functionality
+    // Enhanced Loading Screen - Show for 4.5 seconds with dynamic progress
+    const loadingScreen = document.getElementById('loadingScreen');
+    const progressPercentage = document.querySelector('.progress-percentage');
+    const progressFill = document.querySelector('.progress-fill');
+    const fileCountElement = document.getElementById('fileCount');
+    const loadSpeed = document.getElementById('loadSpeed');
+    let loadingInterval;
+    let isSkipped = false;
+
+    // Click to skip functionality
+    loadingScreen.addEventListener('click', () => {
+      if (!isSkipped) {
+        isSkipped = true;
+        clearInterval(progressInterval);
+        clearInterval(loadingInterval);
+        hideLoadingScreen();
+      }
+    });
+
+    let fileCount = 0;
+    const maxFiles = 47;
+    let lastProgressTime = Date.now();
+    let lastProgress = 0;
+
+    function updateLoadingProgress() {
+      if (fileCountElement) {
+        fileCountElement.textContent = fileCount;
+      }
+    }
+
+    // Animate progress percentage and sync all indicators with realistic timing
+    let progress = 0;
+    const progressInterval = setInterval(() => {
+      if (!isSkipped) {
+        // Calculate progress increment with more realistic variable speed
+        const currentTime = Date.now();
+        const timeElapsed = currentTime - lastProgressTime;
+        
+        // Vary speed more realistically - sometimes faster, sometimes slower
+        let progressIncrement;
+        if (progress < 20) {
+          // Start fast
+          progressIncrement = Math.random() * 8 + 5; // 5-13%
+        } else if (progress < 70) {
+          // Middle phase - variable speed
+          progressIncrement = Math.random() * 6 + 2; // 2-8%  
+        } else if (progress < 95) {
+          // Slow down near end
+          progressIncrement = Math.random() * 3 + 1; // 1-4%
+        } else {
+          // Final stretch - very slow
+          progressIncrement = Math.random() * 1 + 0.5; // 0.5-1.5%
+        }
+        
+        progress += progressIncrement;
+        if (progress > 100) progress = 100;
+        
+        // Update progress percentage and fill
+        const roundedProgress = Math.floor(progress);
+        progressPercentage.textContent = roundedProgress + '%';
+        progressFill.style.width = progress + '%';
+        
+        // Sync file counter perfectly with progress 
+        if (progress >= 100) {
+          fileCount = maxFiles;
+        } else {
+          // Ensure file count matches progress proportionally
+          fileCount = Math.floor((progress / 100) * maxFiles);
+          // Don't allow 47 until we hit exactly 100%
+          if (fileCount >= maxFiles && progress < 100) {
+            fileCount = maxFiles - 1;
+          }
+        }
+        updateLoadingProgress();
+        
+        // Calculate realistic speed based on actual progress rate
+        const progressDelta = progress - lastProgress;
+        const timeDelta = timeElapsed / 1000; // Convert to seconds
+        
+        // Simulate MB/s based on actual progress rate and make it feel realistic
+        let speed;
+        if (timeDelta > 0 && progressDelta > 0) {
+          const progressRate = progressDelta / timeDelta; // Progress % per second
+          // Map progress rate to realistic speed range with some variance
+          const baseSpeed = Math.max(3, Math.min(25, progressRate * 1.2));
+          const variance = (Math.random() - 0.5) * 4; // ±2 MB/s variance
+          speed = Math.max(1, baseSpeed + variance).toFixed(1);
+        } else {
+          // Fallback for edge cases
+          speed = (Math.random() * 3 + 2).toFixed(1);
+        }
+        
+        loadSpeed.textContent = speed;
+        
+        // Update tracking variables
+        lastProgress = progress;
+        lastProgressTime = currentTime;
+        
+        if (progress >= 100) {
+          // Ensure perfect sync at completion
+          progressFill.style.width = '100%';
+          progressPercentage.textContent = '100%';
+          fileCount = maxFiles;
+          updateLoadingProgress();
+          clearInterval(progressInterval);
+        }
+      }
+    }, 180); // Slightly faster interval for smoother animation
+
+    // Hide loading screen function
+    function hideLoadingScreen() {
+      loadingScreen.style.opacity = '0';
+      loadingScreen.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        loadingScreen.style.display = 'none';
+      }, 500);
+    }
+
+    // Auto-hide after 6 seconds if not skipped
+    setTimeout(() => {
+      if (!isSkipped) {
+        isSkipped = true;
+        clearInterval(progressInterval);
+        hideLoadingScreen();
+      }
+    }, 6000); // 6 seconds total
+
+    // Advanced Cursor System
+    const cursorFollower = document.getElementById('cursorFollower');
+    
+    // Mouse movement tracking - exact positioning
+    document.addEventListener('mousemove', (e) => {
+      // Update cursor position immediately with no lag
+      cursorFollower.style.left = e.clientX + 'px';
+      cursorFollower.style.top = e.clientY + 'px';
+    });
+    
+    // Hover effects for interactive elements
+    const hoverElements = document.querySelectorAll('a, button, .btn, .contact-method, .profile-social a, .footer-social a, .portfolio-links a, .company-link, .theme-toggle, .hamburger, .logo');
+    
+    hoverElements.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursorFollower.classList.add('hover-state');
+      });
+      
+      el.addEventListener('mouseleave', () => {
+        cursorFollower.classList.remove('hover-state');
+      });
+    });
+    
+    // Click effects
+    document.addEventListener('mousedown', () => {
+      cursorFollower.classList.add('click-state');
+    });
+    
+    document.addEventListener('mouseup', () => {
+      cursorFollower.classList.remove('click-state');
+    });
+    
+    // Hide cursor on mobile
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (isMobile) {
+      cursorFollower.style.display = 'none';
+    }
+
+    // Navigation
     const header = document.getElementById('header');
     const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+    const navLinks = document.getElementById('navLinks');
     
-    // Sticky header on scroll
+    // Scroll header effect
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('header-scrolled');
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
       } else {
-        header.classList.remove('header-scrolled');
+        header.classList.remove('scrolled');
       }
     });
     
     // Mobile menu toggle
     hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-active');
-      hamburger.innerHTML = navLinks.classList.contains('nav-active') 
-        ? '<i class="fas fa-times"></i>' 
-        : '<i class="fas fa-bars"></i>';
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
     });
-    
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('nav-active');
-        hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-      });
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+      themeToggle.classList.toggle('active');
     });
-    
-    // Active link highlight
-    const sections = document.querySelectorAll('section');
-    
-    window.addEventListener('scroll', () => {
-      let current = '';
+
+    // Typing effect for rotating text
+    const rotatingText = document.querySelector('.rotating-text');
+    if (rotatingText) {
+      const words = rotatingText.dataset.words.split(',');
+      let currentWord = 0;
       
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
+      function typeWord() {
+        const word = words[currentWord];
+        rotatingText.textContent = '';
         
-        if (pageYOffset >= sectionTop - 200) {
-          current = section.getAttribute('id');
-        }
-      });
-      
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').substring(1) === current) {
-          link.classList.add('active');
+        for (let i = 0; i < word.length; i++) {
+          setTimeout(() => {
+            rotatingText.textContent += word[i];
+          }, i * 100);
         }
         
-        // Set About as active when at the top (home section)
-        if (current === 'home' && window.scrollY < 200) {
-          document.querySelector('.nav-links a[href="#about"]').classList.add('active');
+        setTimeout(() => {
+          currentWord = (currentWord + 1) % words.length;
+          typeWord();
+        }, 3000);
+      }
+      
+      typeWord();
+    }
+
+    // Counter animation
+    const counters = document.querySelectorAll('[data-count]');
+    const animateCounter = (counter) => {
+      const target = parseInt(counter.dataset.count);
+      const duration = 2000;
+      const start = performance.now();
+      
+      const animate = (currentTime) => {
+        const elapsed = currentTime - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const current = Math.floor(progress * target);
+        
+        counter.textContent = current;
+        
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        }
+      };
+      
+      requestAnimationFrame(animate);
+    };
+
+    // Intersection Observer for counters
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    });
+    
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // Particle animation
+    const canvas = document.getElementById('particleCanvas');
+    const ctx = canvas.getContext('2d');
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    const particles = [];
+    const particleCount = 50;
+    
+    for (let i = 0; i < particleCount; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.5,
+        vy: (Math.random() - 0.5) * 0.5,
+        size: Math.random() * 2 + 1,
+        opacity: Math.random() * 0.5 + 0.2
+      });
+    }
+    
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      particles.forEach(particle => {
+        particle.x += particle.vx;
+        particle.y += particle.vy;
+        
+        if (particle.x < 0 || particle.x > canvas.width) particle.vx *= -1;
+        if (particle.y < 0 || particle.y > canvas.height) particle.vy *= -1;
+        
+        ctx.beginPath();
+        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(56, 189, 248, ${particle.opacity})`;
+        ctx.fill();
+      });
+      
+      requestAnimationFrame(animateParticles);
+    }
+    
+    animateParticles();
+    
+    // Resize canvas
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
         }
       });
     });
